@@ -1,15 +1,13 @@
 public class Main {
     public static void main(String[] args) {
         int balance = 100;
-        int cash = 2000;
-        int limit = 1000;
-        int bonus;
-        if (cash >= limit) {
-             bonus = cash / 100;
-        } else {
-             bonus = 0;
-            int total = balance + cash + bonus;
+        int cash = 500;
+        int bonus = 0;
 
-            System.out.println(total);}
+        if (cash > 1000) {
+            bonus = cash / 100;
         }
+        balance = balance + cash + bonus;
+        System.out.print("Бонус " + bonus + "\nТекущий счет " + balance);
     }
+}
